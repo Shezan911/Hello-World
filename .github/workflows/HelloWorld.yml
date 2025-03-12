@@ -5,22 +5,22 @@ name: Hello World
 on:
   push:
     branches:
-      -main
+      - main
 
-      pull_request:
-      branches:
-       -main
+  pull_request:
+    branches:
+      - main
 
-       workflow_dispatch:
+  workflow_dispatch:
 
 
-       #Workflow / Jobs 
+ #Workflow / Jobs 
 
-       jobs:
-         hello:
-           runs-on: ubuntu-lates
-           steps:
-           -uses: actions/checkout@v4
-           -name: Hello
+jobs:
+     hello:
+       runs-on: ubuntu-lates
+       steps:
+         - uses: actions/checkout@v4
+         - name: Hello
            run: echo "Hellow World"
            shell: bash
