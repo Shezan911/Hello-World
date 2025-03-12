@@ -7,7 +7,7 @@ on:
     branches:
       -main
 
-      pill_request:
+      pull_request:
       branches:
        -main
 
